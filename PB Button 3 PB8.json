@@ -1,0 +1,116 @@
+{
+  "name": "PB Button 3 PB8",
+  "actions": [
+    {
+      "if": {
+        "equals": {
+          "left": {
+            "device": {
+              "devices": [
+                "2e003fd7-663e-422e-b921-42b432b5c15a"
+              ],
+              "component": "button3",
+              "capability": "button",
+              "attribute": "button"
+            }
+          },
+          "right": {
+            "string": "pushed"
+          }
+        },
+        "then": [
+          {
+            "command": {
+              "devices": [
+                "efc09eb1-7f63-40ec-9e60-0beb8a913dd6"
+              ],
+              "commands": [
+                {
+                  "component": "main",
+                  "capability": "windowShadeLevel",
+                  "command": "setShadeLevel",
+                  "arguments": [{"integer": 100}]
+                }
+              ]
+            }
+          }
+        ],
+        "else": [
+          {
+            "if": {
+              "equals": {
+                "left": {
+                  "device": {
+                    "devices": [
+                      "2e003fd7-663e-422e-b921-42b432b5c15a"
+                    ],
+                    "component": "button3",
+                    "capability": "button",
+                    "attribute": "button"
+                  }
+                },
+                "right": {
+                  "string": "pushed_2x"
+                }
+              },
+              "then": [
+                {
+                  "command": {
+                    "devices": [
+                      "efc09eb1-7f63-40ec-9e60-0beb8a913dd6"
+                    ],
+                    "commands": [
+                      {
+                        "component": "main",
+                        "capability": "windowShadeLevel",
+                        "command": "setShadeLevel",
+                        "arguments": [{"integer": 2}]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "else": [
+                {
+                  "if": {
+                    "equals": {
+                      "left": {
+                        "device": {
+                          "devices": [
+                            "2e003fd7-663e-422e-b921-42b432b5c15a"
+                          ],
+                          "component": "button3",
+                          "capability": "button",
+                          "attribute": "button"
+                        }
+                      },
+                      "right": {
+                        "string": "down_hold"
+                      }
+                    },
+                    "then": [
+                      {
+                        "command": {
+                          "devices": [
+                            "efc09eb1-7f63-40ec-9e60-0beb8a913dd6"
+                          ],
+                          "commands": [
+                            {
+                              "component": "main",
+                              "capability": "windowShade",
+                              "command": "pause"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
