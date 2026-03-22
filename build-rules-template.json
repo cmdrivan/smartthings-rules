@@ -1,0 +1,44 @@
+{
+    "name": "Kitchen Button 1",
+    "actions": [
+        {
+            "if": {
+                "equals": {
+                    "left": {
+                        "device": {
+                            "devices": [
+                                "{{Kitchen_Controller}}"
+                            ],
+                            "component": "button1",
+                            "capability": "button",
+                            "attribute": "button"
+                        }
+                    },
+                    "right": {
+                        "string": "pushed"
+                    }
+                },
+                "then": [
+                    {
+                        "command": {
+                            "devices": [
+                                "{{ST1_Left_Shade}}",
+                                "{{ST2_Right_Shade}}"
+                            ],
+                            "commands": [
+                                {
+                                    "component": "main",
+                                    "capability": "windowShadeLevel",
+                                    "command": "setShadeLevel",
+                                    "arguments": [{"integer": 10}]
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "else": [
+                ]
+            }
+        }
+    ]
+}

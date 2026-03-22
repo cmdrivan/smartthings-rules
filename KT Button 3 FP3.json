@@ -1,0 +1,114 @@
+{
+  "name": "KT Button 3 FP3",
+  "actions": [
+    {
+      "if": {
+        "equals": {
+          "left": {
+            "device": {
+              "devices": [
+                "695813a2-0174-4cf5-841f-560837a8e44c"
+              ],
+              "component": "button3",
+              "capability": "button",
+              "attribute": "button"
+            }
+          },
+          "right": {
+            "string": "pushed"
+          }
+        },
+        "then": [
+          {
+            "command": {
+              "devices": [
+                "c004ec3e-55e1-44aa-ab0b-d6031510164c"
+              ],
+              "commands": [
+                {
+                  "component": "main",
+                  "capability": "windowShade",
+                  "command": "open"
+                }
+              ]
+            }
+          }
+        ],
+        "else": [
+          {
+            "if": {
+              "equals": {
+                "left": {
+                  "device": {
+                    "devices": [
+                      "695813a2-0174-4cf5-841f-560837a8e44c"
+                    ],
+                    "component": "button3",
+                    "capability": "button",
+                    "attribute": "button"
+                  }
+                },
+                "right": {
+                  "string": "down_hold"
+                }
+              },
+              "then": [
+                {
+                  "command": {
+                    "devices": [
+                      "c004ec3e-55e1-44aa-ab0b-d6031510164c"
+                    ],
+                    "commands": [
+                      {
+                        "component": "main",
+                        "capability": "windowShade",
+                        "command": "pause"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "else": [
+                {
+                  "if": {
+                    "equals": {
+                      "left": {
+                        "device": {
+                          "devices": [
+                            "695813a2-0174-4cf5-841f-560837a8e44c"
+                          ],
+                          "component": "button3",
+                          "capability": "button",
+                          "attribute": "button"
+                        }
+                      },
+                      "right": {
+                        "string": "pushed_2x"
+                      }
+                    },
+                    "then": [
+                      {
+                        "command": {
+                          "devices": [
+                            "c004ec3e-55e1-44aa-ab0b-d6031510164c"
+                          ],
+                          "commands": [
+                            {
+                              "component": "main",
+                              "capability": "windowShade",
+                              "command": "close"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
