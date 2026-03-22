@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "KT Button 3 FP3",
   "actions": [
     {
@@ -6,9 +6,7 @@
         "equals": {
           "left": {
             "device": {
-              "devices": [
-                "695813a2-0174-4cf5-841f-560837a8e44c"
-              ],
+              "devices": ["695813a2-0174-4cf5-841f-560837a8e44c"],
               "component": "button3",
               "capability": "button",
               "attribute": "button"
@@ -21,14 +19,13 @@
         "then": [
           {
             "command": {
-              "devices": [
-                "c004ec3e-55e1-44aa-ab0b-d6031510164c"
-              ],
+              "devices": ["c004ec3e-55e1-44aa-ab0b-d6031510164c"],
               "commands": [
                 {
                   "component": "main",
-                  "capability": "windowShade",
-                  "command": "open"
+                  "capability": "windowShadeLevel",
+                  "command": "setShadeLevel",
+                  "arguments": [{"integer": 100}]
                 }
               ]
             }
@@ -40,29 +37,26 @@
               "equals": {
                 "left": {
                   "device": {
-                    "devices": [
-                      "695813a2-0174-4cf5-841f-560837a8e44c"
-                    ],
+                    "devices": ["695813a2-0174-4cf5-841f-560837a8e44c"],
                     "component": "button3",
                     "capability": "button",
                     "attribute": "button"
                   }
                 },
                 "right": {
-                  "string": "down_hold"
+                  "string": "pushed_2x"
                 }
               },
               "then": [
                 {
                   "command": {
-                    "devices": [
-                      "c004ec3e-55e1-44aa-ab0b-d6031510164c"
-                    ],
+                    "devices": ["c004ec3e-55e1-44aa-ab0b-d6031510164c"],
                     "commands": [
                       {
                         "component": "main",
-                        "capability": "windowShade",
-                        "command": "pause"
+                        "capability": "windowShadeLevel",
+                        "command": "setShadeLevel",
+                        "arguments": [{"integer": 2}]
                       }
                     ]
                   }
@@ -74,29 +68,25 @@
                     "equals": {
                       "left": {
                         "device": {
-                          "devices": [
-                            "695813a2-0174-4cf5-841f-560837a8e44c"
-                          ],
+                          "devices": ["695813a2-0174-4cf5-841f-560837a8e44c"],
                           "component": "button3",
                           "capability": "button",
                           "attribute": "button"
                         }
                       },
                       "right": {
-                        "string": "pushed_2x"
+                        "string": "down_hold"
                       }
                     },
                     "then": [
                       {
                         "command": {
-                          "devices": [
-                            "c004ec3e-55e1-44aa-ab0b-d6031510164c"
-                          ],
+                          "devices": ["c004ec3e-55e1-44aa-ab0b-d6031510164c"],
                           "commands": [
                             {
                               "component": "main",
                               "capability": "windowShade",
-                              "command": "close"
+                              "command": "pause"
                             }
                           ]
                         }

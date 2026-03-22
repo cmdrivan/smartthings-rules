@@ -1,31 +1,31 @@
 ﻿{
-  "name": "KT Button 1 ST1",
+  "name": "LR Button 4 DR1 Top",
   "actions": [
     {
       "if": {
         "equals": {
           "left": {
             "device": {
-              "devices": ["695813a2-0174-4cf5-841f-560837a8e44c"],
-              "component": "button1",
+              "devices": ["caed018d-fd45-4826-84e7-fa7ff464bada"],
+              "component": "button4",
               "capability": "button",
               "attribute": "button"
             }
           },
           "right": {
-            "string": "pushed"
+            "string": "pushed_3x"
           }
         },
         "then": [
           {
             "command": {
-              "devices": ["192ca75a-e06e-4f84-a0d9-6e1d39a919fe"],
+              "devices": ["cc671f4c-8944-4dd8-973b-5daeaa3aa2f4"],
               "commands": [
                 {
-                  "component": "main",
+                  "component": "topmotor",
                   "capability": "windowShadeLevel",
                   "command": "setShadeLevel",
-                  "arguments": [{"integer": 100}]
+                  "arguments": [{"integer": 2}]
                 }
               ]
             }
@@ -37,26 +37,26 @@
               "equals": {
                 "left": {
                   "device": {
-                    "devices": ["695813a2-0174-4cf5-841f-560837a8e44c"],
-                    "component": "button1",
+                    "devices": ["caed018d-fd45-4826-84e7-fa7ff464bada"],
+                    "component": "button4",
                     "capability": "button",
                     "attribute": "button"
                   }
                 },
                 "right": {
-                  "string": "pushed_2x"
+                  "string": "pushed_4x"
                 }
               },
               "then": [
                 {
                   "command": {
-                    "devices": ["192ca75a-e06e-4f84-a0d9-6e1d39a919fe"],
+                    "devices": ["cc671f4c-8944-4dd8-973b-5daeaa3aa2f4"],
                     "commands": [
                       {
-                        "component": "main",
+                        "component": "topmotor",
                         "capability": "windowShadeLevel",
                         "command": "setShadeLevel",
-                        "arguments": [{"integer": 2}]
+                        "arguments": [{"integer": 100}]
                       }
                     ]
                   }
@@ -68,8 +68,8 @@
                     "equals": {
                       "left": {
                         "device": {
-                          "devices": ["695813a2-0174-4cf5-841f-560837a8e44c"],
-                          "component": "button1",
+                          "devices": ["caed018d-fd45-4826-84e7-fa7ff464bada"],
+                          "component": "button4",
                           "capability": "button",
                           "attribute": "button"
                         }
@@ -81,10 +81,10 @@
                     "then": [
                       {
                         "command": {
-                          "devices": ["192ca75a-e06e-4f84-a0d9-6e1d39a919fe"],
+                          "devices": ["cc671f4c-8944-4dd8-973b-5daeaa3aa2f4"],
                           "commands": [
                             {
-                              "component": "main",
+                              "component": "topmotor",
                               "capability": "windowShade",
                               "command": "pause"
                             }

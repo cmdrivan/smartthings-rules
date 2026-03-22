@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "LR Button 2 GR5",
   "actions": [
     {
@@ -6,9 +6,7 @@
         "equals": {
           "left": {
             "device": {
-              "devices": [
-                "caed018d-fd45-4826-84e7-fa7ff464bada"
-              ],
+              "devices": ["caed018d-fd45-4826-84e7-fa7ff464bada"],
               "component": "button2",
               "capability": "button",
               "attribute": "button"
@@ -21,9 +19,7 @@
         "then": [
           {
             "command": {
-              "devices": [
-                "4b31719f-ac3d-4402-9e08-77fa19bdd2e2"
-              ],
+              "devices": ["4b31719f-ac3d-4402-9e08-77fa19bdd2e2"],
               "commands": [
                 {
                   "component": "main",
@@ -41,9 +37,7 @@
               "equals": {
                 "left": {
                   "device": {
-                    "devices": [
-                      "caed018d-fd45-4826-84e7-fa7ff464bada"
-                    ],
+                    "devices": ["caed018d-fd45-4826-84e7-fa7ff464bada"],
                     "component": "button2",
                     "capability": "button",
                     "attribute": "button"
@@ -56,9 +50,7 @@
               "then": [
                 {
                   "command": {
-                    "devices": [
-                      "4b31719f-ac3d-4402-9e08-77fa19bdd2e2"
-                    ],
+                    "devices": ["4b31719f-ac3d-4402-9e08-77fa19bdd2e2"],
                     "commands": [
                       {
                         "component": "main",
@@ -76,9 +68,7 @@
                     "equals": {
                       "left": {
                         "device": {
-                          "devices": [
-                            "caed018d-fd45-4826-84e7-fa7ff464bada"
-                          ],
+                          "devices": ["caed018d-fd45-4826-84e7-fa7ff464bada"],
                           "component": "button2",
                           "capability": "button",
                           "attribute": "button"
@@ -91,9 +81,7 @@
                     "then": [
                       {
                         "command": {
-                          "devices": [
-                            "4b31719f-ac3d-4402-9e08-77fa19bdd2e2"
-                          ],
+                          "devices": ["4b31719f-ac3d-4402-9e08-77fa19bdd2e2"],
                           "commands": [
                             {
                               "component": "main",

@@ -1,13 +1,13 @@
 ﻿{
-  "name": "KT Button 1 ST1",
+  "name": "DN Button 2 DN3",
   "actions": [
     {
       "if": {
         "equals": {
           "left": {
             "device": {
-              "devices": ["695813a2-0174-4cf5-841f-560837a8e44c"],
-              "component": "button1",
+              "devices": ["4bf0d189-4d2e-41fe-a6af-45a38be1bc88"],
+              "component": "button2",
               "capability": "button",
               "attribute": "button"
             }
@@ -19,7 +19,7 @@
         "then": [
           {
             "command": {
-              "devices": ["192ca75a-e06e-4f84-a0d9-6e1d39a919fe"],
+              "devices": ["d8580ba8-161b-46ad-9525-acd9ef8bf810"],
               "commands": [
                 {
                   "component": "main",
@@ -37,8 +37,8 @@
               "equals": {
                 "left": {
                   "device": {
-                    "devices": ["695813a2-0174-4cf5-841f-560837a8e44c"],
-                    "component": "button1",
+                    "devices": ["4bf0d189-4d2e-41fe-a6af-45a38be1bc88"],
+                    "component": "button2",
                     "capability": "button",
                     "attribute": "button"
                   }
@@ -50,7 +50,7 @@
               "then": [
                 {
                   "command": {
-                    "devices": ["192ca75a-e06e-4f84-a0d9-6e1d39a919fe"],
+                    "devices": ["d8580ba8-161b-46ad-9525-acd9ef8bf810"],
                     "commands": [
                       {
                         "component": "main",
@@ -68,8 +68,8 @@
                     "equals": {
                       "left": {
                         "device": {
-                          "devices": ["695813a2-0174-4cf5-841f-560837a8e44c"],
-                          "component": "button1",
+                          "devices": ["4bf0d189-4d2e-41fe-a6af-45a38be1bc88"],
+                          "component": "button2",
                           "capability": "button",
                           "attribute": "button"
                         }
@@ -81,7 +81,7 @@
                     "then": [
                       {
                         "command": {
-                          "devices": ["192ca75a-e06e-4f84-a0d9-6e1d39a919fe"],
+                          "devices": ["d8580ba8-161b-46ad-9525-acd9ef8bf810"],
                           "commands": [
                             {
                               "component": "main",
