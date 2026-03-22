@@ -129,4 +129,6 @@ foreach ($item in $rules) {
     $fileName = "$($item.Name).json"
     $content | Out-File -FilePath $fileName -Encoding utf8
     Write-Host "Generated: $fileName"
+
+    smartthings rules:create -l 208e3b71-4001-4128-a9db-2c3ea2497660 -i $fileName
 }
