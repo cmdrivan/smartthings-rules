@@ -1,5 +1,5 @@
 {
-  "name": "LR Button 1 DN3",
+  "name": "LR Button 3 GR6 Top",
   "actions": [
     {
       "if": {
@@ -9,27 +9,27 @@
               "devices": [
                 "caed018d-fd45-4826-84e7-fa7ff464bada"
               ],
-              "component": "button1",
+              "component": "button3",
               "capability": "button",
               "attribute": "button"
             }
           },
           "right": {
-            "string": "pushed"
+            "string": "pushed_3x"
           }
         },
         "then": [
           {
             "command": {
               "devices": [
-                "d8580ba8-161b-46ad-9525-acd9ef8bf810"
+                "cf3b7491-7021-47b8-90b2-d12f808711ea"
               ],
               "commands": [
                 {
                   "component": "topmotor",
                   "capability": "windowShadeLevel",
                   "command": "setShadeLevel",
-                  "arguments": [{"integer": 100}]
+                  "arguments": [{"integer": 2}]
                 }
               ]
             }
@@ -44,27 +44,27 @@
                     "devices": [
                       "caed018d-fd45-4826-84e7-fa7ff464bada"
                     ],
-                    "component": "button1",
+                    "component": "button3",
                     "capability": "button",
                     "attribute": "button"
                   }
                 },
                 "right": {
-                  "string": "pushed_2x"
+                  "string": "pushed_4x"
                 }
               },
               "then": [
                 {
                   "command": {
                     "devices": [
-                      "d8580ba8-161b-46ad-9525-acd9ef8bf810"
+                      "cf3b7491-7021-47b8-90b2-d12f808711ea"
                     ],
                     "commands": [
                       {
                         "component": "topmotor",
                         "capability": "windowShadeLevel",
                         "command": "setShadeLevel",
-                        "arguments": [{"integer": 2}]
+                        "arguments": [{"integer": 100}]
                       }
                     ]
                   }
@@ -79,7 +79,7 @@
                           "devices": [
                             "caed018d-fd45-4826-84e7-fa7ff464bada"
                           ],
-                          "component": "button1",
+                          "component": "button3",
                           "capability": "button",
                           "attribute": "button"
                         }
@@ -92,7 +92,7 @@
                       {
                         "command": {
                           "devices": [
-                            "d8580ba8-161b-46ad-9525-acd9ef8bf810"
+                            "cf3b7491-7021-47b8-90b2-d12f808711ea"
                           ],
                           "commands": [
                             {

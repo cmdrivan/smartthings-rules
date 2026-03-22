@@ -1,0 +1,116 @@
+{
+  "name": "LR Button 1 GR4 Top",
+  "actions": [
+    {
+      "if": {
+        "equals": {
+          "left": {
+            "device": {
+              "devices": [
+                "caed018d-fd45-4826-84e7-fa7ff464bada"
+              ],
+              "component": "button1",
+              "capability": "button",
+              "attribute": "button"
+            }
+          },
+          "right": {
+            "string": "pushed_3x"
+          }
+        },
+        "then": [
+          {
+            "command": {
+              "devices": [
+                "16f36a30-fb08-412a-9d30-00b39168eca7"
+              ],
+              "commands": [
+                {
+                  "component": "topmotor",
+                  "capability": "windowShadeLevel",
+                  "command": "setShadeLevel",
+                  "arguments": [{"integer": 2}]
+                }
+              ]
+            }
+          }
+        ],
+        "else": [
+          {
+            "if": {
+              "equals": {
+                "left": {
+                  "device": {
+                    "devices": [
+                      "caed018d-fd45-4826-84e7-fa7ff464bada"
+                    ],
+                    "component": "button1",
+                    "capability": "button",
+                    "attribute": "button"
+                  }
+                },
+                "right": {
+                  "string": "pushed_4x"
+                }
+              },
+              "then": [
+                {
+                  "command": {
+                    "devices": [
+                      "16f36a30-fb08-412a-9d30-00b39168eca7"
+                    ],
+                    "commands": [
+                      {
+                        "component": "topmotor",
+                        "capability": "windowShadeLevel",
+                        "command": "setShadeLevel",
+                        "arguments": [{"integer": 100}]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "else": [
+                {
+                  "if": {
+                    "equals": {
+                      "left": {
+                        "device": {
+                          "devices": [
+                            "caed018d-fd45-4826-84e7-fa7ff464bada"
+                          ],
+                          "component": "button1",
+                          "capability": "button",
+                          "attribute": "button"
+                        }
+                      },
+                      "right": {
+                        "string": "down_hold"
+                      }
+                    },
+                    "then": [
+                      {
+                        "command": {
+                          "devices": [
+                            "16f36a30-fb08-412a-9d30-00b39168eca7"
+                          ],
+                          "commands": [
+                            {
+                              "component": "topmotor",
+                              "capability": "windowShade",
+                              "command": "pause"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
