@@ -1,8 +1,8 @@
 # 1. Define your data (This could also be imported from a CSV)
 $rules = @(
     @{ Name = "LR Button 4 DR1"; Controller = "caed018d-fd45-4826-84e7-fa7ff464bada"; Button = "button4"; Shade = "cc671f4c-8944-4dd8-973b-5daeaa3aa2f4" },
-    @{ Name = "DN Button 1 DN2"; Controller = "4bf0d189-4d2e-41fe-a6af-45a38be1bc88"; Button = "button1"; Shade = "6d203403-2326-4cfc-a68b-591b35272ab6" },
-    @{ Name = "DN Button 2 DN3"; Controller = "4bf0d189-4d2e-41fe-a6af-45a38be1bc88"; Button = "button2"; Shade = "d8580ba8-161b-46ad-9525-acd9ef8bf810" },
+    @{ Name = "DN Button 1 DN2"; Controller = "4bf0d189-4d2e-41fe-a6af-45a38be1bc88"; Button = "button1"; Shade = "6522a7b1-1ed2-4ef7-865f-a0b89777f056" },
+    @{ Name = "DN Button 2 DN3"; Controller = "4bf0d189-4d2e-41fe-a6af-45a38be1bc88"; Button = "button2"; Shade = "b45cbc98-a70d-484a-b9cb-c15477369f00" },
     @{ Name = "LR Button 1 GR4"; Controller = "caed018d-fd45-4826-84e7-fa7ff464bada"; Button = "button1"; Shade = "16f36a30-fb08-412a-9d30-00b39168eca7" },
     @{ Name = "LR Button 2 GR5"; Controller = "caed018d-fd45-4826-84e7-fa7ff464bada"; Button = "button2"; Shade = "4b31719f-ac3d-4402-9e08-77fa19bdd2e2" },
     @{ Name = "LR Button 3 GR6"; Controller = "caed018d-fd45-4826-84e7-fa7ff464bada"; Button = "button3"; Shade = "cf3b7491-7021-47b8-90b2-d12f808711ea" },
@@ -136,5 +136,5 @@ foreach ($item in $rules) {
     $content | Out-File -FilePath $fileName -Encoding utf8
     Write-Host "Generated: $fileName"
 
-    smartthings rules:create -l 208e3b71-4001-4128-a9db-2c3ea2497660 -i $fileName
+    # smartthings rules:create -l 208e3b71-4001-4128-a9db-2c3ea2497660 -i $fileName
 }

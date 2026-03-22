@@ -19,7 +19,7 @@
         "then": [
           {
             "command": {
-              "devices": ["d8580ba8-161b-46ad-9525-acd9ef8bf810"],
+              "devices": ["b45cbc98-a70d-484a-b9cb-c15477369f00"],
               "commands": [
                 {
                   "component": "main",
@@ -50,7 +50,7 @@
               "then": [
                 {
                   "command": {
-                    "devices": ["d8580ba8-161b-46ad-9525-acd9ef8bf810"],
+                    "devices": ["b45cbc98-a70d-484a-b9cb-c15477369f00"],
                     "commands": [
                       {
                         "component": "main",
@@ -81,7 +81,7 @@
                     "then": [
                       {
                         "command": {
-                          "devices": ["d8580ba8-161b-46ad-9525-acd9ef8bf810"],
+                          "devices": ["b45cbc98-a70d-484a-b9cb-c15477369f00"],
                           "commands": [
                             {
                               "component": "main",
